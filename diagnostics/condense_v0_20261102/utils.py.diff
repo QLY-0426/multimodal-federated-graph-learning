@@ -1,0 +1,11 @@
+--- a/openfgl/flcore/multimodal_fedgvd/utils.py
++++ b/openfgl/flcore/multimodal_fedgvd/utils.py
+@@ -53,6 +53,8 @@
+ 
+ def cache_signature(processed_data, settings):
+     """Include graph, split and compression settings; never test labels."""
++    # Increment whenever condensation semantics change; do not mutate caller settings.
++    settings = {**settings, "condense_version": 2}
+     data = processed_data["data"]
+     digest = hashlib.sha256(json.dumps(settings, sort_keys=True).encode())
+     tensors = [data.x_text, data.x_image, data.edge_index, modality_mask(data)]

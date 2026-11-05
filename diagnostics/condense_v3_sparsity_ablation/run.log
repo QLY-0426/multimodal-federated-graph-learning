@@ -1,0 +1,18 @@
+CACHE Movies_fixed_42.pt {'type': 'dict', 'keys': ['graph', 'signature'], 'payload': {'x_text': [209, 768], 'x_image': [209, 768], 'y': [209], 'edge_index': [2, 17686], 'edge_weight': [17686], 'modality_mask': [209, 2]}}
+RESULT {'dataset': 'Movies', 'method': 'fixed', 'seed': 42, 'variant': 'orig', 'acc': 0.33742329478263855, 'delta_pp': 0.0, 'nodes': 209, 'edges': 17686, 'degree': 84.622009569378, 'nonloop_degree': 84.622009569378, 'mean_weight': 0.9871744513511658} {'predicted_counts': [43, 211, 0, 11, 0, 0, 3, 36, 0, 0, 14, 5, 0, 0, 0, 0, 0, 2, 1, 0], 'actual_counts': [35, 109, 36, 27, 2, 8, 12, 21, 3, 3, 27, 8, 2, 4, 5, 4, 3, 14, 2, 1], 'majority_class': 1, 'majority_share': 0.33435583114624023, 'predicted_majority_share': 0.6472392678260803, 'macro_f1': 0.06325801461935043}
+CACHE Toys_fixed_42.pt {'type': 'dict', 'keys': ['graph', 'signature'], 'payload': {'x_text': [254, 768], 'x_image': [254, 768], 'y': [254], 'edge_index': [2, 21730], 'edge_weight': [21730], 'modality_mask': [254, 2]}}
+RESULT {'dataset': 'Toys', 'method': 'fixed', 'seed': 42, 'variant': 'orig', 'acc': 0.23960880935192108, 'delta_pp': 0.0, 'nodes': 254, 'edges': 21730, 'degree': 85.55118110236221, 'nonloop_degree': 85.55118110236221, 'mean_weight': 0.9754540920257568} {'predicted_counts': [49, 0, 164, 30, 36, 1, 0, 24, 0, 2, 0, 1, 15, 22, 19, 5, 41, 0], 'actual_counts': [6, 28, 32, 17, 23, 11, 31, 13, 32, 42, 43, 35, 22, 14, 14, 10, 32, 4], 'majority_class': 10, 'majority_share': 0.10513447225093842, 'predicted_majority_share': 0.0, 'macro_f1': 0.24036352336406708}
+orig �����ż�δͨ�� ('Toys', 'fixed', 42)��V1 24.2054%��V3 23.9609%���� -0.2445 pp��
+Traceback (most recent call last):
+  File "D:\����ѧϰ����\������_������Ŀ����\�½��ļ���\FedGVD-multimodal_fedgvd���޸İ�)\FedGVD-multimodal_fedgvd\diagnostics\condense_v3_sparsity_ablation\run_v3.py", line 308, in <module>
+    main()
+    ~~~~^^
+  File "D:\����ѧϰ����\������_������Ŀ����\�½��ļ���\FedGVD-multimodal_fedgvd���޸İ�)\FedGVD-multimodal_fedgvd\diagnostics\condense_v3_sparsity_ablation\run_v3.py", line 294, in main
+    experiment()
+    ~~~~~~~~~~^^
+  File "D:\����ѧϰ����\������_������Ŀ����\�½��ļ���\FedGVD-multimodal_fedgvd���޸İ�)\FedGVD-multimodal_fedgvd\diagnostics\condense_v3_sparsity_ablation\run_v3.py", line 215, in experiment
+    gate(run(ds,'fixed',42,'orig',graph,real,val))
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\����ѧϰ����\������_������Ŀ����\�½��ļ���\FedGVD-multimodal_fedgvd���޸İ�)\FedGVD-multimodal_fedgvd\diagnostics\condense_v3_sparsity_ablation\run_v3.py", line 182, in gate
+    raise RuntimeError(f'orig �����ż�δͨ�� {key}��V1 {ref*100:.4f}%��V3 {row["acc"]*100:.4f}%���� {(row["acc"]-ref)*100:+.4f} pp��')
+RuntimeError: orig �����ż�δͨ�� ('Toys', 'fixed', 42)��V1 24.2054%��V3 23.9609%���� -0.2445 pp��

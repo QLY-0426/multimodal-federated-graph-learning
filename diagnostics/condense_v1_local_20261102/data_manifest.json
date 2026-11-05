@@ -1,0 +1,92 @@
+[
+  {
+    "dataset": "Movies",
+    "seed": 42,
+    "global_nodes": 16672,
+    "client_nodes": 1675,
+    "edges": 1034,
+    "classes": 20,
+    "splits": [
+      998,
+      326,
+      351
+    ],
+    "missing_modalities": 0,
+    "synthetic_nodes": 209
+  },
+  {
+    "dataset": "Movies",
+    "seed": 43,
+    "global_nodes": 16672,
+    "client_nodes": 1675,
+    "edges": 980,
+    "classes": 20,
+    "splits": [
+      998,
+      326,
+      351
+    ],
+    "missing_modalities": 0,
+    "synthetic_nodes": 209
+  },
+  {
+    "dataset": "Movies",
+    "seed": 44,
+    "global_nodes": 16672,
+    "client_nodes": 1675,
+    "edges": 1111,
+    "classes": 20,
+    "splits": [
+      998,
+      326,
+      351
+    ],
+    "missing_modalities": 0,
+    "synthetic_nodes": 209
+  },
+  {
+    "dataset": "Toys",
+    "seed": 42,
+    "global_nodes": 20695,
+    "client_nodes": 2077,
+    "edges": 624,
+    "classes": 18,
+    "splits": [
+      1241,
+      409,
+      427
+    ],
+    "missing_modalities": 0,
+    "synthetic_nodes": 254
+  },
+  {
+    "dataset": "Toys",
+    "seed": 43,
+    "global_nodes": 20695,
+    "client_nodes": 2077,
+    "edges": 585,
+    "classes": 18,
+    "splits": [
+      1241,
+      409,
+      427
+    ],
+    "missing_modalities": 0,
+    "synthetic_nodes": 254
+  },
+  {
+    "dataset": "Toys",
+    "seed": 44,
+    "global_nodes": 20695,
+    "client_nodes": 2077,
+    "edges": 694,
+    "classes": 18,
+    "splits": [
+      1241,
+      409,
+      427
+    ],
+    "missing_modalities": 0,
+    "synthetic_nodes": 254
+  }
+]

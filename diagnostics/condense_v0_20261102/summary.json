@@ -1,0 +1,29 @@
+[
+  {
+    "mode": "legacy",
+    "alternating": false,
+    "teacher_initial": 0.875,
+    "teacher_final": 1.0,
+    "selected_edges": 90,
+    "text_shift": 2.435049,
+    "image_shift": 3.574658
+  },
+  {
+    "mode": "consistent_low",
+    "alternating": true,
+    "teacher_initial": 0.4167,
+    "teacher_final": 1.0,
+    "selected_edges": 552,
+    "text_shift": 2.162015,
+    "image_shift": 3.472904
+  },
+  {
+    "mode": "soft",
+    "alternating": true,
+    "teacher_initial": 0.4167,
+    "teacher_final": 1.0,
+    "selected_edges": 552,
+    "text_shift": 2.142141,
+    "image_shift": 3.489191
+  }
+]

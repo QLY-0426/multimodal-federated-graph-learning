@@ -1,0 +1,65 @@
+﻿device=cuda:0 torch=2.12.0.dev20260408+cu128
+REUSED Movies_a1.0_s42.pt nodes=209 edges=17602
+GCN Movies a1.0 500 31.595
+GCN Movies a1.0 501 28.528
+GCN Movies a1.0 502 29.141
+MLP Movies a1.0 500 40.184
+MLP Movies a1.0 501 27.914
+MLP Movies a1.0 502 33.436
+PROBE {'dataset': 'Movies', 'split_seed': 42, 'alpha': 1.0, 'nn_cos_mean': 0.28548750281333923, 'nn_cos_min': 0.07155259698629379, 'nn_same_label_rate': 0.559808611869812, 'nodes': 209, 'edges': 17602}
+REUSED Movies_a0.0_s42.pt nodes=209 edges=17648
+GCN Movies a0.0 500 30.368
+GCN Movies a0.0 501 32.515
+GCN Movies a0.0 502 30.368
+MLP Movies a0.0 500 38.344
+MLP Movies a0.0 501 36.810
+MLP Movies a0.0 502 32.515
+PROBE {'dataset': 'Movies', 'split_seed': 42, 'alpha': 0.0, 'nn_cos_mean': 0.282573938369751, 'nn_cos_min': 0.05543438717722893, 'nn_same_label_rate': 0.6220095753669739, 'nodes': 209, 'edges': 17648}
+[condense-diag] adj_mode=consistent_low alternating_optim=True
+[condense-diag] epoch=0 teacher_on_syn_acc=0.1024 retained_edges=64262
+[condense-diag] epoch=50 weight.mean=0.478060 fraction_ge_adj_threshold=0.436463 retained_edges=57428 teacher_on_syn_acc=0.1339
+[condense] epoch=50 loss=3.85153 validation=0.0782
+[condense-diag] epoch=100 weight.mean=0.372826 fraction_ge_adj_threshold=0.382652 retained_edges=41838 teacher_on_syn_acc=0.3780
+[condense] epoch=100 loss=2.83785 validation=0.1222
+[condense-diag] epoch=150 weight.mean=0.329006 fraction_ge_adj_threshold=0.329308 retained_edges=28058 teacher_on_syn_acc=0.5118
+[condense] epoch=150 loss=2.24031 validation=0.1467
+[condense-diag] epoch=200 weight.mean=0.334019 fraction_ge_adj_threshold=0.334599 retained_edges=22542 teacher_on_syn_acc=0.5039
+[condense] epoch=200 loss=2.00538 validation=0.1198
+[condense-diag] epoch=250 weight.mean=0.316592 fraction_ge_adj_threshold=0.315023 retained_edges=27178 teacher_on_syn_acc=0.5906
+[condense] epoch=250 loss=1.82828 validation=0.2103
+[condense-diag] epoch=300 weight.mean=0.316293 fraction_ge_adj_threshold=0.315023 retained_edges=20812 teacher_on_syn_acc=0.5906
+[condense] epoch=300 loss=1.66203 validation=0.1932
+[condense-diag] final_text_relative_shift=10.849570 final_image_relative_shift=10.553198
+[client 0] saved 254 paired nodes: D:\下载学习软件\韩旭涛_科研项目资料\新建文件夹\FedGVD-multimodal_fedgvd（修改版)\FedGVD-multimodal_fedgvd\diagnostics\condense_v5_alpha_ablation_20261103\cache\Toys_a1.0_s42.pt
+CONDENSED Toys alpha=1.0 nodes=254 edges=27178 seconds=66.3
+GCN Toys a1.0 500 18.093
+GCN Toys a1.0 501 17.848
+GCN Toys a1.0 502 21.760
+MLP Toys a1.0 500 36.675
+MLP Toys a1.0 501 24.939
+MLP Toys a1.0 502 24.939
+PROBE {'dataset': 'Toys', 'split_seed': 42, 'alpha': 1.0, 'nn_cos_mean': 0.29295724630355835, 'nn_cos_min': 0.11155524849891663, 'nn_same_label_rate': 0.9488189220428467, 'nodes': 254, 'edges': 27178}
+[condense-diag] adj_mode=consistent_low alternating_optim=True
+[condense-diag] epoch=0 teacher_on_syn_acc=0.1024 retained_edges=64262
+[condense-diag] epoch=50 weight.mean=0.479617 fraction_ge_adj_threshold=0.437584 retained_edges=57166 teacher_on_syn_acc=0.1339
+[condense] epoch=50 loss=3.83562 validation=0.0807
+[condense-diag] epoch=100 weight.mean=0.375404 fraction_ge_adj_threshold=0.379758 retained_edges=40534 teacher_on_syn_acc=0.3150
+[condense] epoch=100 loss=2.83606 validation=0.0782
+[condense-diag] epoch=150 weight.mean=0.326939 fraction_ge_adj_threshold=0.323924 retained_edges=31246 teacher_on_syn_acc=0.5354
+[condense] epoch=150 loss=2.23809 validation=0.1614
+[condense-diag] epoch=200 weight.mean=0.297561 fraction_ge_adj_threshold=0.305499 retained_edges=21266 teacher_on_syn_acc=0.5394
+[condense] epoch=200 loss=1.87822 validation=0.1932
+[condense-diag] epoch=250 weight.mean=0.301312 fraction_ge_adj_threshold=0.302263 retained_edges=20094 teacher_on_syn_acc=0.6142
+[condense] epoch=250 loss=1.69482 validation=0.1614
+[condense-diag] epoch=300 weight.mean=0.303032 fraction_ge_adj_threshold=0.302231 retained_edges=19618 teacher_on_syn_acc=0.6220
+[condense] epoch=300 loss=1.54776 validation=0.1320
+[condense-diag] final_text_relative_shift=10.860679 final_image_relative_shift=10.574856
+[client 0] saved 254 paired nodes: D:\下载学习软件\韩旭涛_科研项目资料\新建文件夹\FedGVD-multimodal_fedgvd（修改版)\FedGVD-multimodal_fedgvd\diagnostics\condense_v5_alpha_ablation_20261103\cache\Toys_a0.0_s42.pt
+CONDENSED Toys alpha=0.0 nodes=254 edges=21266 seconds=63.8
+GCN Toys a0.0 500 17.604
+GCN Toys a0.0 501 18.093
+GCN Toys a0.0 502 17.848
+MLP Toys a0.0 500 24.450
+MLP Toys a0.0 501 22.005
+MLP Toys a0.0 502 26.650
+PROBE {'dataset': 'Toys', 'split_seed': 42, 'alpha': 0.0, 'nn_cos_mean': 0.270155668258667, 'nn_cos_min': 0.09059754759073257, 'nn_same_label_rate': 0.960629940032959, 'nodes': 254, 'edges': 21266}

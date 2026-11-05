@@ -1,0 +1,16 @@
+[condense-diag] adj_mode=legacy alternating_optim=False
+[condense-diag] epoch=0 teacher_on_syn_acc=0.4641 retained_edges=888
+[condense-diag] epoch=50 weight.mean=0.236477 fraction_ge_adj_threshold=0.244433 retained_edges=10626 teacher_on_syn_acc=0.3828
+[condense] epoch=50 loss=2.89810 validation=0.3129
+[condense-diag] epoch=100 weight.mean=0.242403 fraction_ge_adj_threshold=0.244433 retained_edges=10626 teacher_on_syn_acc=0.6555
+[condense] epoch=100 loss=1.53718 validation=0.3436
+[condense-diag] epoch=150 weight.mean=0.092549 fraction_ge_adj_threshold=0.092611 retained_edges=4026 teacher_on_syn_acc=0.9234
+[condense] epoch=150 loss=0.87966 validation=0.2638
+[condense-diag] epoch=200 weight.mean=0.092599 fraction_ge_adj_threshold=0.092611 retained_edges=4026 teacher_on_syn_acc=0.9330
+[condense] epoch=200 loss=0.72100 validation=0.3067
+[condense-diag] epoch=250 weight.mean=0.092600 fraction_ge_adj_threshold=0.092611 retained_edges=4026 teacher_on_syn_acc=0.9474
+[condense] epoch=250 loss=0.59401 validation=0.3221
+[condense-diag] epoch=300 weight.mean=0.016912 fraction_ge_adj_threshold=0.019323 retained_edges=840 teacher_on_syn_acc=0.9665
+[condense] epoch=300 loss=0.45962 validation=0.3834
+[condense-diag] final_text_relative_shift=14.242659 final_image_relative_shift=17.143373
+[client 0] saved 209 paired nodes: D:\下载学习软件\韩旭涛_科研项目资料\新建文件夹\FedGVD-multimodal_fedgvd（修改版)\FedGVD-multimodal_fedgvd\diagnostics\condense_v1_local_20261102\cache\20261102_224147\Movies_legacy_44.pt

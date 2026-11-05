@@ -1,0 +1,139 @@
+--- a/openfgl/flcore/multimodal_fedgvd/SimGC_transductive.py
++++ b/openfgl/flcore/multimodal_fedgvd/SimGC_transductive.py
+@@ -98,15 +98,33 @@
+                 edge_index=edges, edge_weight=weight)
+ 
+ 
+-def _validate_synthetic(synthetic, real, val_mask, args, dimensions, classes):
++def _adjacency(edges, weight, mode, validation=False):
++    """Select topology while preserving gradients through retained soft weights."""
++    if mode == "consistent_low":
++        keep = weight >= 0.01
++    elif mode == "soft" or (mode == "legacy" and not validation):
++        keep = torch.ones_like(weight, dtype=torch.bool)
++    elif mode == "legacy":
++        keep = weight >= config["adj_threshold"]
++    else:
++        raise ValueError(f"Unknown adj_mode: {mode!r}")
++    return edges[:, keep], weight[keep]
++
++
++def _validate_synthetic(synthetic, real, val_mask, args, dimensions, classes,
++                        teacher=None, diagnostics=None):
+     # Give every candidate the same initialization and training randomness.
+     devices = [real.x.device.index] if real.x.is_cuda else []
+     with torch.random.fork_rng(devices=devices):
+         torch.manual_seed(args.seed)
++        mask = torch.ones(synthetic.num_nodes, dtype=torch.bool, device=real.x.device)
++        if teacher is not None:
++            teacher_acc = _accuracy(teacher, synthetic, mask)
++            print(f"[condense-diag] {diagnostics or ''} "
++                  f"teacher_on_syn_acc={teacher_acc:.4f}", flush=True)
+         student = MultimodalGCN(dimensions, args.hid_dim, classes, args.num_layers,
+                                args.dropout, args.multimodal_fusion_temperature).to(real.x.device)
+         optimizer = torch.optim.Adam(student.parameters(), lr=args.lr, weight_decay=args.weight_decay)
+-        mask = torch.ones(synthetic.num_nodes, dtype=torch.bool, device=real.x.device)
+         for _ in range(args.multimodal_student_epochs):
+             student.train()
+             optimizer.zero_grad()
+@@ -116,6 +134,11 @@
+ 
+ 
+ def train_syn(data, train_mask, val_mask, teacher, args, dimensions, classes):
++    adj_mode = config.get("adj_mode", "legacy")
++    alternating = config.get("alternating_optim", False)
++    if adj_mode not in ("consistent_low", "soft", "legacy"):
++        raise ValueError(f"Unknown adj_mode: {adj_mode!r}")
++    print(f"[condense-diag] adj_mode={adj_mode} alternating_optim={alternating}", flush=True)
+     available = modality_mask(data)
+     train_mask = train_mask & available.any(dim=1)
+     labels = generate_labels_syn(data.y[train_mask], args.multimodal_reduction_rate)
+@@ -128,6 +151,7 @@
+     mask = available[selected].clone()
+     text = torch.nn.Parameter(F.normalize(data.x_text[selected], dim=1).clone())
+     image = torch.nn.Parameter(F.normalize(data.x_image[selected], dim=1).clone())
++    text_init, image_init = text.detach().clone(), image.detach().clone()
+     n = labels.numel()
+     edges = torch.cartesian_prod(torch.arange(n, device=data.x.device),
+                                  torch.arange(n, device=data.x.device)).T
+@@ -154,36 +178,61 @@
+             edge_optimizer.zero_grad()
+         paired = torch.cat([text * mask[:, :1], image * mask[:, 1:]], dim=1)
+         weight = pge(paired)[edges[0], edges[1]] if pge else text.new_empty(0)
+-        synthetic = _synthetic_graph(text, image, labels, mask, edges, weight)
++        train_edges, train_weight = _adjacency(edges, weight, adj_mode)
++        synthetic = _synthetic_graph(text, image, labels, mask, train_edges, train_weight)
++        if epoch == 0:
++            # Record a pre-optimization reference on the deployment topology.
++            with torch.no_grad(), torch.random.fork_rng(
++                    devices=[data.x.device.index] if data.x.is_cuda else []):
++                torch.manual_seed(args.seed)
++                initial_edges, initial_weight = _adjacency(edges, weight, adj_mode, validation=True)
++                initial = _synthetic_graph(text, image, labels, mask, initial_edges, initial_weight)
++                initial_acc = _accuracy(teacher, initial, syn_mask)
++                print(f"[condense-diag] epoch=0 teacher_on_syn_acc={initial_acc:.4f} "
++                      f"retained_edges={initial_edges.size(1)}", flush=True)
+         loss = _loss(teacher, synthetic, syn_mask)
+         smoothness = text.sum() * 0
+         for modal, feature in enumerate([text, image]):
+-            propagated = _propagated_features(feature, edges, weight, mask[:, modal], args.num_layers)
++            propagated = _propagated_features(feature, train_edges, train_weight, mask[:, modal], args.num_layers)
+             loss = loss + config["feat_alpha"] * _alignment(real_stats[modal], propagated, labels, mask[:, modal])
+-            valid = mask[edges[0], modal] & mask[edges[1], modal]
++            valid = mask[train_edges[0], modal] & mask[train_edges[1], modal]
+             if valid.any():
+                 normalized = F.normalize(feature, dim=1)
+-                distance = (normalized[edges[0, valid]] - normalized[edges[1, valid]]).square().mean(dim=1)
+-                smoothness = smoothness + (weight[valid] * distance).sum() / weight[valid].sum().clamp_min(1e-12)
++                distance = (normalized[train_edges[0, valid]] - normalized[train_edges[1, valid]]).square().mean(dim=1)
++                smoothness = smoothness + (train_weight[valid] * distance).sum() / train_weight[valid].sum().clamp_min(1e-12)
+         loss = loss + config["smoothness_alpha"] * smoothness
+         if not torch.isfinite(loss):
+             raise RuntimeError("Non-finite multimodal condensation loss")
+         loss.backward()
+-        feature_optimizer.step()
+-        if edge_optimizer:
++        # A single proxy has no PGE, so its features must still be trainable.
++        edge_phase = alternating and edge_optimizer is not None and epoch % 50 < 10
++        if not edge_phase:
++            feature_optimizer.step()
++        if edge_optimizer and (not alternating or edge_phase):
+             edge_optimizer.step()
+         if (epoch + 1) % args.multimodal_validation_interval == 0 or epoch + 1 == args.multimodal_condense_epochs:
+             with torch.no_grad():
+                 paired = torch.cat([text * mask[:, :1], image * mask[:, 1:]], dim=1)
+                 weight = pge(paired)[edges[0], edges[1]] if pge else text.new_empty(0)
+-                keep = weight >= config["adj_threshold"]
++                eval_edges, eval_weight = _adjacency(edges, weight, adj_mode, validation=True)
+                 candidate = _synthetic_graph(text.detach().clone(), image.detach().clone(), labels,
+-                                             mask, edges[:, keep], weight[keep].detach().clone())
+-            score = _validate_synthetic(candidate, data, val_mask, args, dimensions, classes)
++                                             mask, eval_edges, eval_weight.detach().clone())
++                mean = weight.mean().item() if weight.numel() else 0.0
++                fraction = (weight >= config["adj_threshold"]).float().mean().item() if weight.numel() else 0.0
++                diagnostics = (f"epoch={epoch + 1} weight.mean={mean:.6f} "
++                               f"fraction_ge_adj_threshold={fraction:.6f} "
++                               f"retained_edges={eval_edges.size(1)}")
++            score = _validate_synthetic(candidate, data, val_mask, args, dimensions, classes,
++                                        teacher=teacher, diagnostics=diagnostics)
+             score = -loss.item() if score is None else score
+             if score > best_score:
+                 best_score, best_graph = score, candidate
+             print(f"[condense] epoch={epoch + 1} loss={loss.item():.5f} validation={score:.4f}", flush=True)
++    with torch.no_grad():
++        text_shift = (text - text_init).norm() / text_init.norm().clamp_min(1e-12)
++        image_shift = (image - image_init).norm() / image_init.norm().clamp_min(1e-12)
++        print(f"[condense-diag] final_text_relative_shift={text_shift.item():.6f} "
++              f"final_image_relative_shift={image_shift.item():.6f}", flush=True)
+     return best_graph
+ 
+ 
+@@ -213,6 +262,8 @@
+     if path.exists():
+         cached = torch.load(path, map_location="cpu")
+         if cached.get("signature") == signature:
++            print(f"[condense-diag] adj_mode={config.get('adj_mode', 'legacy')} "
++                  f"alternating_optim={config.get('alternating_optim', False)} cache_hit=True", flush=True)
+             print(f"[client {client_id}] loaded condensed graph: {path}", flush=True)
+             return graph_from_payload(cached["graph"], device)
+     devices = [device.index] if device.type == "cuda" else []

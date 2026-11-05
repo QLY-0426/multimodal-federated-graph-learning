@@ -1,0 +1,127 @@
+CACHE Movies_fixed_42.pt {'type': 'dict', 'keys': ['graph', 'signature'], 'payload': {'x_text': [209, 768], 'x_image': [209, 768], 'y': [209], 'edge_index': [2, 17686], 'edge_weight': [17686], 'modality_mask': [209, 2]}}
+RESULT Movies fixed 42 orig 500 acc=0.297546 F1=0.056154
+RESULT Movies fixed 42 orig 501 acc=0.291411 F1=0.040372
+RESULT Movies fixed 42 orig 502 acc=0.325153 F1=0.068936
+RESULT Movies fixed 42 selfloop_only 500 acc=0.368098 F1=0.136205
+RESULT Movies fixed 42 selfloop_only 501 acc=0.322086 F1=0.104407
+RESULT Movies fixed 42 selfloop_only 502 acc=0.309816 F1=0.109854
+RESULT Movies fixed 42 topk_sym_k1 500 acc=0.365031 F1=0.118700
+RESULT Movies fixed 42 topk_sym_k1 501 acc=0.288344 F1=0.102178
+RESULT Movies fixed 42 topk_sym_k1 502 acc=0.355828 F1=0.099240
+RESULT Movies fixed 42 topk_sym_k2 500 acc=0.322086 F1=0.110061
+RESULT Movies fixed 42 topk_sym_k2 501 acc=0.294479 F1=0.091714
+RESULT Movies fixed 42 topk_sym_k2 502 acc=0.414110 F1=0.091035
+RESULT Movies fixed 42 topk_sym_k5 500 acc=0.346626 F1=0.037717
+RESULT Movies fixed 42 topk_sym_k5 501 acc=0.337423 F1=0.047646
+RESULT Movies fixed 42 topk_sym_k5 502 acc=0.355828 F1=0.053073
+RESULT Movies fixed 42 topk_sym_k10 500 acc=0.306748 F1=0.027581
+RESULT Movies fixed 42 topk_sym_k10 501 acc=0.291411 F1=0.061352
+RESULT Movies fixed 42 topk_sym_k10 502 acc=0.337423 F1=0.044278
+CACHE Toys_fixed_42.pt {'type': 'dict', 'keys': ['graph', 'signature'], 'payload': {'x_text': [254, 768], 'x_image': [254, 768], 'y': [254], 'edge_index': [2, 21730], 'edge_weight': [21730], 'modality_mask': [254, 2]}}
+RESULT Toys fixed 42 orig 500 acc=0.193154 F1=0.204664
+RESULT Toys fixed 42 orig 501 acc=0.205379 F1=0.183706
+RESULT Toys fixed 42 orig 502 acc=0.202934 F1=0.195949
+RESULT Toys fixed 42 selfloop_only 500 acc=0.361858 F1=0.302054
+RESULT Toys fixed 42 selfloop_only 501 acc=0.334963 F1=0.287548
+RESULT Toys fixed 42 selfloop_only 502 acc=0.369193 F1=0.313432
+RESULT Toys fixed 42 topk_sym_k1 500 acc=0.300734 F1=0.248322
+RESULT Toys fixed 42 topk_sym_k1 501 acc=0.293399 F1=0.253563
+RESULT Toys fixed 42 topk_sym_k1 502 acc=0.325183 F1=0.268365
+RESULT Toys fixed 42 topk_sym_k2 500 acc=0.361858 F1=0.278912
+RESULT Toys fixed 42 topk_sym_k2 501 acc=0.330073 F1=0.258419
+RESULT Toys fixed 42 topk_sym_k2 502 acc=0.378973 F1=0.294452
+RESULT Toys fixed 42 topk_sym_k5 500 acc=0.278729 F1=0.208909
+RESULT Toys fixed 42 topk_sym_k5 501 acc=0.312958 F1=0.268654
+RESULT Toys fixed 42 topk_sym_k5 502 acc=0.249389 F1=0.188266
+RESULT Toys fixed 42 topk_sym_k10 500 acc=0.322738 F1=0.298448
+RESULT Toys fixed 42 topk_sym_k10 501 acc=0.281174 F1=0.280356
+RESULT Toys fixed 42 topk_sym_k10 502 acc=0.295844 F1=0.271298
+STAGE B topk_sym_k2 eligible ['topk_sym_k1', 'topk_sym_k2', 'topk_sym_k5', 'topk_sym_k10']
+CACHE Movies_legacy_42.pt {'type': 'dict', 'keys': ['graph', 'signature'], 'payload': {'x_text': [209, 768], 'x_image': [209, 768], 'y': [209], 'edge_index': [2, 8866], 'edge_weight': [8866], 'modality_mask': [209, 2]}}
+RESULT Movies legacy 42 orig 500 acc=0.346626 F1=0.073485
+RESULT Movies legacy 42 orig 501 acc=0.371166 F1=0.088604
+RESULT Movies legacy 42 orig 502 acc=0.331288 F1=0.084954
+RESULT Movies legacy 42 topk_sym_k2 500 acc=0.285276 F1=0.071686
+RESULT Movies legacy 42 topk_sym_k2 501 acc=0.273006 F1=0.071541
+RESULT Movies legacy 42 topk_sym_k2 502 acc=0.248466 F1=0.080851
+CACHE Movies_fixed_43.pt {'type': 'dict', 'keys': ['graph', 'signature'], 'payload': {'x_text': [209, 768], 'x_image': [209, 768], 'y': [209], 'edge_index': [2, 29758], 'edge_weight': [29758], 'modality_mask': [209, 2]}}
+RESULT Movies fixed 43 orig 500 acc=0.334356 F1=0.025115
+RESULT Movies fixed 43 orig 501 acc=0.334356 F1=0.025231
+RESULT Movies fixed 43 orig 502 acc=0.334356 F1=0.025115
+RESULT Movies fixed 43 topk_sym_k2 500 acc=0.334356 F1=0.103274
+RESULT Movies fixed 43 topk_sym_k2 501 acc=0.358896 F1=0.071913
+RESULT Movies fixed 43 topk_sym_k2 502 acc=0.211656 F1=0.076600
+CACHE Movies_legacy_43.pt {'type': 'dict', 'keys': ['graph', 'signature'], 'payload': {'x_text': [209, 768], 'x_image': [209, 768], 'y': [209], 'edge_index': [2, 6676], 'edge_weight': [6676], 'modality_mask': [209, 2]}}
+RESULT Movies legacy 43 orig 500 acc=0.134969 F1=0.055930
+RESULT Movies legacy 43 orig 501 acc=0.104294 F1=0.043244
+RESULT Movies legacy 43 orig 502 acc=0.349693 F1=0.110308
+RESULT Movies legacy 43 topk_sym_k2 500 acc=0.230061 F1=0.048660
+RESULT Movies legacy 43 topk_sym_k2 501 acc=0.156442 F1=0.041406
+RESULT Movies legacy 43 topk_sym_k2 502 acc=0.334356 F1=0.078608
+CACHE Movies_fixed_44.pt {'type': 'dict', 'keys': ['graph', 'signature'], 'payload': {'x_text': [209, 768], 'x_image': [209, 768], 'y': [209], 'edge_index': [2, 23680], 'edge_weight': [23680], 'modality_mask': [209, 2]}}
+RESULT Movies fixed 44 orig 500 acc=0.315951 F1=0.026142
+RESULT Movies fixed 44 orig 501 acc=0.312883 F1=0.036337
+RESULT Movies fixed 44 orig 502 acc=0.279141 F1=0.038885
+RESULT Movies fixed 44 topk_sym_k2 500 acc=0.168712 F1=0.063913
+RESULT Movies fixed 44 topk_sym_k2 501 acc=0.196319 F1=0.071411
+RESULT Movies fixed 44 topk_sym_k2 502 acc=0.159509 F1=0.045915
+CACHE Movies_legacy_44.pt {'type': 'dict', 'keys': ['graph', 'signature'], 'payload': {'x_text': [209, 768], 'x_image': [209, 768], 'y': [209], 'edge_index': [2, 840], 'edge_weight': [840], 'modality_mask': [209, 2]}}
+RESULT Movies legacy 44 orig 500 acc=0.417178 F1=0.110785
+RESULT Movies legacy 44 orig 501 acc=0.411043 F1=0.104140
+RESULT Movies legacy 44 orig 502 acc=0.395706 F1=0.077701
+RESULT Movies legacy 44 topk_sym_k2 500 acc=0.208589 F1=0.085958
+RESULT Movies legacy 44 topk_sym_k2 501 acc=0.220859 F1=0.071190
+RESULT Movies legacy 44 topk_sym_k2 502 acc=0.325153 F1=0.098043
+CACHE Toys_legacy_42.pt {'type': 'dict', 'keys': ['graph', 'signature'], 'payload': {'x_text': [254, 768], 'x_image': [254, 768], 'y': [254], 'edge_index': [2, 15080], 'edge_weight': [15080], 'modality_mask': [254, 2]}}
+RESULT Toys legacy 42 orig 500 acc=0.237164 F1=0.143273
+RESULT Toys legacy 42 orig 501 acc=0.202934 F1=0.136473
+RESULT Toys legacy 42 orig 502 acc=0.176039 F1=0.082406
+RESULT Toys legacy 42 topk_sym_k2 500 acc=0.210269 F1=0.106854
+RESULT Toys legacy 42 topk_sym_k2 501 acc=0.200489 F1=0.087503
+RESULT Toys legacy 42 topk_sym_k2 502 acc=0.234719 F1=0.132321
+CACHE Toys_fixed_43.pt {'type': 'dict', 'keys': ['graph', 'signature'], 'payload': {'x_text': [254, 768], 'x_image': [254, 768], 'y': [254], 'edge_index': [2, 20108], 'edge_weight': [20108], 'modality_mask': [254, 2]}}
+RESULT Toys fixed 43 orig 500 acc=0.149144 F1=0.070490
+RESULT Toys fixed 43 orig 501 acc=0.151589 F1=0.074942
+RESULT Toys fixed 43 orig 502 acc=0.144254 F1=0.035317
+RESULT Toys fixed 43 topk_sym_k2 500 acc=0.176039 F1=0.125058
+RESULT Toys fixed 43 topk_sym_k2 501 acc=0.141809 F1=0.087375
+RESULT Toys fixed 43 topk_sym_k2 502 acc=0.195599 F1=0.128384
+CACHE Toys_legacy_43.pt {'type': 'dict', 'keys': ['graph', 'signature'], 'payload': {'x_text': [254, 768], 'x_image': [254, 768], 'y': [254], 'edge_index': [2, 16728], 'edge_weight': [16728], 'modality_mask': [254, 2]}}
+RESULT Toys legacy 43 orig 500 acc=0.220049 F1=0.102775
+RESULT Toys legacy 43 orig 501 acc=0.168704 F1=0.074277
+RESULT Toys legacy 43 orig 502 acc=0.190709 F1=0.069685
+RESULT Toys legacy 43 topk_sym_k2 500 acc=0.276284 F1=0.188147
+RESULT Toys legacy 43 topk_sym_k2 501 acc=0.278729 F1=0.192915
+RESULT Toys legacy 43 topk_sym_k2 502 acc=0.266504 F1=0.203054
+CACHE Toys_fixed_44.pt {'type': 'dict', 'keys': ['graph', 'signature'], 'payload': {'x_text': [254, 768], 'x_image': [254, 768], 'y': [254], 'edge_index': [2, 21884], 'edge_weight': [21884], 'modality_mask': [254, 2]}}
+RESULT Toys fixed 44 orig 500 acc=0.229829 F1=0.119066
+RESULT Toys fixed 44 orig 501 acc=0.271394 F1=0.156646
+RESULT Toys fixed 44 orig 502 acc=0.227384 F1=0.102630
+RESULT Toys fixed 44 topk_sym_k2 500 acc=0.462103 F1=0.367154
+RESULT Toys fixed 44 topk_sym_k2 501 acc=0.511002 F1=0.397641
+RESULT Toys fixed 44 topk_sym_k2 502 acc=0.476773 F1=0.364400
+CACHE Toys_legacy_44.pt {'type': 'dict', 'keys': ['graph', 'signature'], 'payload': {'x_text': [254, 768], 'x_image': [254, 768], 'y': [254], 'edge_index': [2, 0], 'edge_weight': [0], 'modality_mask': [254, 2]}}
+RESULT Toys legacy 44 orig 500 acc=0.413203 F1=0.326194
+RESULT Toys legacy 44 orig 501 acc=0.471883 F1=0.398312
+RESULT Toys legacy 44 orig 502 acc=0.432763 F1=0.350575
+RESULT Toys legacy 44 topk_sym_k2 500 acc=0.413203 F1=0.326194
+RESULT Toys legacy 44 topk_sym_k2 501 acc=0.471883 F1=0.398312
+RESULT Toys legacy 44 topk_sym_k2 502 acc=0.432763 F1=0.350575
+ANCHORS {'dataset': 'Movies', 'seed': 42, 'student_seed': 500, 'real100': 0.4141104221343994, 'mlp_only': 0.38957053422927856}
+ANCHORS {'dataset': 'Movies', 'seed': 42, 'student_seed': 501, 'real100': 0.39570552110671997, 'mlp_only': 0.38343557715415955}
+ANCHORS {'dataset': 'Movies', 'seed': 42, 'student_seed': 502, 'real100': 0.39263802766799927, 'mlp_only': 0.38957053422927856}
+ANCHORS {'dataset': 'Movies', 'seed': 43, 'student_seed': 500, 'real100': 0.43251532316207886, 'mlp_only': 0.453987717628479}
+ANCHORS {'dataset': 'Movies', 'seed': 43, 'student_seed': 501, 'real100': 0.43865031003952026, 'mlp_only': 0.43865031003952026}
+ANCHORS {'dataset': 'Movies', 'seed': 43, 'student_seed': 502, 'real100': 0.43251532316207886, 'mlp_only': 0.4447852671146393}
+ANCHORS {'dataset': 'Movies', 'seed': 44, 'student_seed': 500, 'real100': 0.39570552110671997, 'mlp_only': 0.38650307059288025}
+ANCHORS {'dataset': 'Movies', 'seed': 44, 'student_seed': 501, 'real100': 0.4110429286956787, 'mlp_only': 0.38957053422927856}
+ANCHORS {'dataset': 'Movies', 'seed': 44, 'student_seed': 502, 'real100': 0.4079754650592804, 'mlp_only': 0.39263802766799927}
+ANCHORS {'dataset': 'Toys', 'seed': 42, 'student_seed': 500, 'real100': 0.6992665529251099, 'mlp_only': 0.6723716855049133}
+ANCHORS {'dataset': 'Toys', 'seed': 42, 'student_seed': 501, 'real100': 0.6748166680335999, 'mlp_only': 0.6797066330909729}
+ANCHORS {'dataset': 'Toys', 'seed': 42, 'student_seed': 502, 'real100': 0.6797066330909729, 'mlp_only': 0.689486563205719}
+ANCHORS {'dataset': 'Toys', 'seed': 43, 'student_seed': 500, 'real100': 0.684596598148346, 'mlp_only': 0.6797066330909729}
+ANCHORS {'dataset': 'Toys', 'seed': 43, 'student_seed': 501, 'real100': 0.6870415806770325, 'mlp_only': 0.7041565179824829}
+ANCHORS {'dataset': 'Toys', 'seed': 43, 'student_seed': 502, 'real100': 0.6772616505622864, 'mlp_only': 0.6821516156196594}
+ANCHORS {'dataset': 'Toys', 'seed': 44, 'student_seed': 500, 'real100': 0.689486563205719, 'mlp_only': 0.7212714552879333}
+ANCHORS {'dataset': 'Toys', 'seed': 44, 'student_seed': 501, 'real100': 0.6919315457344055, 'mlp_only': 0.7163814306259155}
+ANCHORS {'dataset': 'Toys', 'seed': 44, 'student_seed': 502, 'real100': 0.6821516156196594, 'mlp_only': 0.7017115354537964}

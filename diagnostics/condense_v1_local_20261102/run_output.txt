@@ -1,0 +1,44 @@
+DEVICE=cuda:0 EPOCHS=(200, 300, 500, 50)
+DATA {'dataset': 'Movies', 'seed': 42, 'global_nodes': 16672, 'client_nodes': 1675, 'edges': 1034, 'classes': 20, 'splits': [998, 326, 351], 'missing_modalities': 0, 'synthetic_nodes': 209}
+START Movies legacy 42
+RESULT {'dataset': 'Movies', 'method': 'legacy', 'seed': 42, 'val_acc': 0.37730059027671814, 'syn_nodes': 209, 'syn_edges': 8866, 'seconds': 71.85}
+START Movies fixed 42
+RESULT {'dataset': 'Movies', 'method': 'fixed', 'seed': 42, 'val_acc': 0.33742329478263855, 'syn_nodes': 209, 'syn_edges': 17686, 'seconds': 60.93}
+START Movies random_baseline 42
+RESULT {'dataset': 'Movies', 'method': 'random_baseline', 'seed': 42, 'val_acc': 0.38036808371543884, 'syn_nodes': 209, 'syn_edges': 12, 'seconds': 4.32}
+DATA {'dataset': 'Movies', 'seed': 43, 'global_nodes': 16672, 'client_nodes': 1675, 'edges': 980, 'classes': 20, 'splits': [998, 326, 351], 'missing_modalities': 0, 'synthetic_nodes': 209}
+START Movies legacy 43
+RESULT {'dataset': 'Movies', 'method': 'legacy', 'seed': 43, 'val_acc': 0.16871164739131927, 'syn_nodes': 209, 'syn_edges': 6676, 'seconds': 69.94}
+START Movies fixed 43
+RESULT {'dataset': 'Movies', 'method': 'fixed', 'seed': 43, 'val_acc': 0.34049078822135925, 'syn_nodes': 209, 'syn_edges': 29758, 'seconds': 65.95}
+START Movies random_baseline 43
+RESULT {'dataset': 'Movies', 'method': 'random_baseline', 'seed': 43, 'val_acc': 0.38957053422927856, 'syn_nodes': 209, 'syn_edges': 8, 'seconds': 4.06}
+DATA {'dataset': 'Movies', 'seed': 44, 'global_nodes': 16672, 'client_nodes': 1675, 'edges': 1111, 'classes': 20, 'splits': [998, 326, 351], 'missing_modalities': 0, 'synthetic_nodes': 209}
+START Movies legacy 44
+RESULT {'dataset': 'Movies', 'method': 'legacy', 'seed': 44, 'val_acc': 0.38343557715415955, 'syn_nodes': 209, 'syn_edges': 840, 'seconds': 81.3}
+START Movies fixed 44
+RESULT {'dataset': 'Movies', 'method': 'fixed', 'seed': 44, 'val_acc': 0.3190183937549591, 'syn_nodes': 209, 'syn_edges': 23680, 'seconds': 82.66}
+START Movies random_baseline 44
+RESULT {'dataset': 'Movies', 'method': 'random_baseline', 'seed': 44, 'val_acc': 0.4110429286956787, 'syn_nodes': 209, 'syn_edges': 10, 'seconds': 6.02}
+DATA {'dataset': 'Toys', 'seed': 42, 'global_nodes': 20695, 'client_nodes': 2077, 'edges': 624, 'classes': 18, 'splits': [1241, 409, 427], 'missing_modalities': 0, 'synthetic_nodes': 254}
+START Toys legacy 42
+RESULT {'dataset': 'Toys', 'method': 'legacy', 'seed': 42, 'val_acc': 0.23227384686470032, 'syn_nodes': 254, 'syn_edges': 15080, 'seconds': 108.6}
+START Toys fixed 42
+RESULT {'dataset': 'Toys', 'method': 'fixed', 'seed': 42, 'val_acc': 0.2420538067817688, 'syn_nodes': 254, 'syn_edges': 21730, 'seconds': 88.78}
+START Toys random_baseline 42
+RESULT {'dataset': 'Toys', 'method': 'random_baseline', 'seed': 42, 'val_acc': 0.5916870832443237, 'syn_nodes': 254, 'syn_edges': 11, 'seconds': 5.45}
+DATA {'dataset': 'Toys', 'seed': 43, 'global_nodes': 20695, 'client_nodes': 2077, 'edges': 585, 'classes': 18, 'splits': [1241, 409, 427], 'missing_modalities': 0, 'synthetic_nodes': 254}
+START Toys legacy 43
+RESULT {'dataset': 'Toys', 'method': 'legacy', 'seed': 43, 'val_acc': 0.20293399691581726, 'syn_nodes': 254, 'syn_edges': 16728, 'seconds': 128.69}
+START Toys fixed 43
+RESULT {'dataset': 'Toys', 'method': 'fixed', 'seed': 43, 'val_acc': 0.15403424203395844, 'syn_nodes': 254, 'syn_edges': 20108, 'seconds': 104.79}
+START Toys random_baseline 43
+RESULT {'dataset': 'Toys', 'method': 'random_baseline', 'seed': 43, 'val_acc': 0.6039119958877563, 'syn_nodes': 254, 'syn_edges': 15, 'seconds': 4.98}
+DATA {'dataset': 'Toys', 'seed': 44, 'global_nodes': 20695, 'client_nodes': 2077, 'edges': 694, 'classes': 18, 'splits': [1241, 409, 427], 'missing_modalities': 0, 'synthetic_nodes': 254}
+START Toys legacy 44
+RESULT {'dataset': 'Toys', 'method': 'legacy', 'seed': 44, 'val_acc': 0.45721274614334106, 'syn_nodes': 254, 'syn_edges': 0, 'seconds': 118.44}
+START Toys fixed 44
+RESULT {'dataset': 'Toys', 'method': 'fixed', 'seed': 44, 'val_acc': 0.22249390184879303, 'syn_nodes': 254, 'syn_edges': 21884, 'seconds': 95.4}
+START Toys random_baseline 44
+RESULT {'dataset': 'Toys', 'method': 'random_baseline', 'seed': 44, 'val_acc': 0.5965770483016968, 'syn_nodes': 254, 'syn_edges': 7, 'seconds': 4.77}
+ALL 18 RUNS COMPLETE; source/data SHA256 unchanged

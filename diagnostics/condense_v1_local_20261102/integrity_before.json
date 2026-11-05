@@ -1,0 +1,21 @@
+{
+  "D:\\下载学习软件\\韩旭涛_科研项目资料\\跑FedMVP实验\\10_29跑实验\\FedGVD-multimodal_fedgvd\\dataset\\global\\subgraph_fl\\Movies\\processed\\data.pt": "4f8e305fa14070dd89ad3a7a0ba0a0a02921aed1cfd803ed9761b7eb91ac5fcf",
+  "D:\\下载学习软件\\韩旭涛_科研项目资料\\跑FedMVP实验\\10_29跑实验\\FedGVD-multimodal_fedgvd\\dataset\\global\\subgraph_fl\\Movies\\processed\\pre_filter.pt": "fe7c8f11dba2284d2e9fcdc06d2333ee1a9f381570e210c4188fe6290f392192",
+  "D:\\下载学习软件\\韩旭涛_科研项目资料\\跑FedMVP实验\\10_29跑实验\\FedGVD-multimodal_fedgvd\\dataset\\global\\subgraph_fl\\Movies\\processed\\pre_transform.pt": "fe7c8f11dba2284d2e9fcdc06d2333ee1a9f381570e210c4188fe6290f392192",
+  "D:\\下载学习软件\\韩旭涛_科研项目资料\\跑FedMVP实验\\10_29跑实验\\FedGVD-multimodal_fedgvd\\dataset\\global\\subgraph_fl\\Movies\\raw\\edge_index.npy": "e54dcd979210515b6653699355fa0a5f86936e93d3a0cbcf9bf58c3214c604df",
+  "D:\\下载学习软件\\韩旭涛_科研项目资料\\跑FedMVP实验\\10_29跑实验\\FedGVD-multimodal_fedgvd\\dataset\\global\\subgraph_fl\\Movies\\raw\\image_features.npy": "5e354459ae2d22fdd5bbbd0343cde90266d539c121eb3923af5002dd2c1f0886",
+  "D:\\下载学习软件\\韩旭涛_科研项目资料\\跑FedMVP实验\\10_29跑实验\\FedGVD-multimodal_fedgvd\\dataset\\global\\subgraph_fl\\Movies\\raw\\labels.npy": "d6c53fb0dfdadde8de448d476f5dd84d3fb3648712a26fc56935124d73d3e804",
+  "D:\\下载学习软件\\韩旭涛_科研项目资料\\跑FedMVP实验\\10_29跑实验\\FedGVD-multimodal_fedgvd\\dataset\\global\\subgraph_fl\\Movies\\raw\\node_ids.npy": "8e5fef2a8aa80d86ce1fe0c32aac7db86f7c36fdf81c24d7de10fd83f983556d",
+  "D:\\下载学习软件\\韩旭涛_科研项目资料\\跑FedMVP实验\\10_29跑实验\\FedGVD-multimodal_fedgvd\\dataset\\global\\subgraph_fl\\Movies\\raw\\text_features.npy": "26feb11d6eba36529de44cbb3a641cde77cdfd9ddade904a966f03d31673dd77",
+  "D:\\下载学习软件\\韩旭涛_科研项目资料\\跑FedMVP实验\\10_29跑实验\\FedGVD-multimodal_fedgvd\\dataset\\global\\subgraph_fl\\Toys\\processed\\data.pt": "6eb27a180c05e59114464e65e72f2cd88d42a48e6021a8e54182b3115e9c14f3",
+  "D:\\下载学习软件\\韩旭涛_科研项目资料\\跑FedMVP实验\\10_29跑实验\\FedGVD-multimodal_fedgvd\\dataset\\global\\subgraph_fl\\Toys\\processed\\pre_filter.pt": "fe7c8f11dba2284d2e9fcdc06d2333ee1a9f381570e210c4188fe6290f392192",
+  "D:\\下载学习软件\\韩旭涛_科研项目资料\\跑FedMVP实验\\10_29跑实验\\FedGVD-multimodal_fedgvd\\dataset\\global\\subgraph_fl\\Toys\\processed\\pre_transform.pt": "fe7c8f11dba2284d2e9fcdc06d2333ee1a9f381570e210c4188fe6290f392192",
+  "D:\\下载学习软件\\韩旭涛_科研项目资料\\跑FedMVP实验\\10_29跑实验\\FedGVD-multimodal_fedgvd\\dataset\\global\\subgraph_fl\\Toys\\raw\\edge_index.npy": "49b93e7f57bd9bd788a84963428d88a8a0bc824b87906522f455f6c30cbd6b30",
+  "D:\\下载学习软件\\韩旭涛_科研项目资料\\跑FedMVP实验\\10_29跑实验\\FedGVD-multimodal_fedgvd\\dataset\\global\\subgraph_fl\\Toys\\raw\\image_features.npy": "9f75802fa9389dea21861fed36c88fe23d374e2c685353f9f22f41313f991726",
+  "D:\\下载学习软件\\韩旭涛_科研项目资料\\跑FedMVP实验\\10_29跑实验\\FedGVD-multimodal_fedgvd\\dataset\\global\\subgraph_fl\\Toys\\raw\\labels.npy": "b52c2ad6bcba0c9cb82c0ccb7242c6ce7fa56ab0328ee5ef7cda62d2e9e41889",
+  "D:\\下载学习软件\\韩旭涛_科研项目资料\\跑FedMVP实验\\10_29跑实验\\FedGVD-multimodal_fedgvd\\dataset\\global\\subgraph_fl\\Toys\\raw\\node_ids.npy": "7556a5ed0db059f5348b423d4d372bff84780c11e1d7d8ff1f5c89abafcc2101",
+  "D:\\下载学习软件\\韩旭涛_科研项目资料\\跑FedMVP实验\\10_29跑实验\\FedGVD-multimodal_fedgvd\\dataset\\global\\subgraph_fl\\Toys\\raw\\text_features.npy": "d0b0304c718f977a7cc69438be49e92dcc5efe73d82e2ed722498bbb7241c2e3",
+  "D:\\下载学习软件\\韩旭涛_科研项目资料\\新建文件夹\\FedGVD-multimodal_fedgvd（修改版)\\FedGVD-multimodal_fedgvd\\openfgl\\flcore\\multimodal_fedgvd\\SimGC_transductive.py": "a84e360dd127ef7ccfc8663e8069005604efdcc562bd60549e012e032fb95335",
+  "D:\\下载学习软件\\韩旭涛_科研项目资料\\新建文件夹\\FedGVD-multimodal_fedgvd（修改版)\\FedGVD-multimodal_fedgvd\\openfgl\\flcore\\multimodal_fedgvd\\fedgvd_config.py": "9a362614461615ff86092143c14051314212464c0d3a59a6fd7eb676f7d4e5ad",
+  "D:\\下载学习软件\\韩旭涛_科研项目资料\\新建文件夹\\FedGVD-multimodal_fedgvd（修改版)\\FedGVD-multimodal_fedgvd\\openfgl\\flcore\\multimodal_fedgvd\\utils.py": "70ffc0f1dd6b431dfaac97faa044b6ee5163831d452f0b523fe6e790cc9a3c6c"
+}

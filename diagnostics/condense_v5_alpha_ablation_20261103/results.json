@@ -1,0 +1,326 @@
+{
+  "rows": [
+    {
+      "dataset": "Movies",
+      "split_seed": 42,
+      "alpha": 1.0,
+      "student_seed": 500,
+      "metric": "gcn",
+      "value": 0.3159509003162384,
+      "predicted_majority_share": 0.7024539709091187,
+      "macro_f1": 0.04418063536286354
+    },
+    {
+      "dataset": "Movies",
+      "split_seed": 42,
+      "alpha": 1.0,
+      "student_seed": 501,
+      "metric": "gcn",
+      "value": 0.28527605533599854,
+      "predicted_majority_share": 0.5245398879051208,
+      "macro_f1": 0.038598112761974335
+    },
+    {
+      "dataset": "Movies",
+      "split_seed": 42,
+      "alpha": 1.0,
+      "student_seed": 502,
+      "metric": "gcn",
+      "value": 0.29141104221343994,
+      "predicted_majority_share": 0.493865042924881,
+      "macro_f1": 0.04143635183572769
+    },
+    {
+      "dataset": "Movies",
+      "split_seed": 42,
+      "alpha": 1.0,
+      "student_seed": 500,
+      "metric": "syn_feat_mlp",
+      "value": 0.401840478181839,
+      "predicted_majority_share": 0.5030674934387207,
+      "macro_f1": 0.12636078894138336
+    },
+    {
+      "dataset": "Movies",
+      "split_seed": 42,
+      "alpha": 1.0,
+      "student_seed": 501,
+      "metric": "syn_feat_mlp",
+      "value": 0.2791410982608795,
+      "predicted_majority_share": 0.21165643632411957,
+      "macro_f1": 0.12090442329645157
+    },
+    {
+      "dataset": "Movies",
+      "split_seed": 42,
+      "alpha": 1.0,
+      "student_seed": 502,
+      "metric": "syn_feat_mlp",
+      "value": 0.33435583114624023,
+      "predicted_majority_share": 0.20552147924900055,
+      "macro_f1": 0.10964729636907578
+    },
+    {
+      "dataset": "Movies",
+      "split_seed": 42,
+      "alpha": 0.0,
+      "student_seed": 500,
+      "metric": "gcn",
+      "value": 0.30368098616600037,
+      "predicted_majority_share": 0.6226993799209595,
+      "macro_f1": 0.04500754922628403
+    },
+    {
+      "dataset": "Movies",
+      "split_seed": 42,
+      "alpha": 0.0,
+      "student_seed": 501,
+      "metric": "gcn",
+      "value": 0.3251533806324005,
+      "predicted_majority_share": 0.7177914381027222,
+      "macro_f1": 0.04640055447816849
+    },
+    {
+      "dataset": "Movies",
+      "split_seed": 42,
+      "alpha": 0.0,
+      "student_seed": 502,
+      "metric": "gcn",
+      "value": 0.30368098616600037,
+      "predicted_majority_share": 0.5613496899604797,
+      "macro_f1": 0.04616346210241318
+    },
+    {
+      "dataset": "Movies",
+      "split_seed": 42,
+      "alpha": 0.0,
+      "student_seed": 500,
+      "metric": "syn_feat_mlp",
+      "value": 0.38343557715415955,
+      "predicted_majority_share": 0.4570552110671997,
+      "macro_f1": 0.13165345788002014
+    },
+    {
+      "dataset": "Movies",
+      "split_seed": 42,
+      "alpha": 0.0,
+      "student_seed": 501,
+      "metric": "syn_feat_mlp",
+      "value": 0.3680981397628784,
+      "predicted_majority_share": 0.38343557715415955,
+      "macro_f1": 0.10588902235031128
+    },
+    {
+      "dataset": "Movies",
+      "split_seed": 42,
+      "alpha": 0.0,
+      "student_seed": 502,
+      "metric": "syn_feat_mlp",
+      "value": 0.3251533806324005,
+      "predicted_majority_share": 0.2791410982608795,
+      "macro_f1": 0.09436140209436417
+    },
+    {
+      "dataset": "Toys",
+      "split_seed": 42,
+      "alpha": 1.0,
+      "student_seed": 500,
+      "metric": "gcn",
+      "value": 0.18092910945415497,
+      "predicted_majority_share": 0.0,
+      "macro_f1": 0.13793867826461792
+    },
+    {
+      "dataset": "Toys",
+      "split_seed": 42,
+      "alpha": 1.0,
+      "student_seed": 501,
+      "metric": "gcn",
+      "value": 0.17848411202430725,
+      "predicted_majority_share": 0.0,
+      "macro_f1": 0.13266544044017792
+    },
+    {
+      "dataset": "Toys",
+      "split_seed": 42,
+      "alpha": 1.0,
+      "student_seed": 502,
+      "metric": "gcn",
+      "value": 0.2176039218902588,
+      "predicted_majority_share": 0.0,
+      "macro_f1": 0.18583020567893982
+    },
+    {
+      "dataset": "Toys",
+      "split_seed": 42,
+      "alpha": 1.0,
+      "student_seed": 500,
+      "metric": "syn_feat_mlp",
+      "value": 0.366748183965683,
+      "predicted_majority_share": 0.01955990307033062,
+      "macro_f1": 0.2883087992668152
+    },
+    {
+      "dataset": "Toys",
+      "split_seed": 42,
+      "alpha": 1.0,
+      "student_seed": 501,
+      "metric": "syn_feat_mlp",
+      "value": 0.24938876926898956,
+      "predicted_majority_share": 0.012224938720464706,
+      "macro_f1": 0.1948576718568802
+    },
+    {
+      "dataset": "Toys",
+      "split_seed": 42,
+      "alpha": 1.0,
+      "student_seed": 502,
+      "metric": "syn_feat_mlp",
+      "value": 0.24938876926898956,
+      "predicted_majority_share": 0.01711491495370865,
+      "macro_f1": 0.1890529841184616
+    },
+    {
+      "dataset": "Toys",
+      "split_seed": 42,
+      "alpha": 0.0,
+      "student_seed": 500,
+      "metric": "gcn",
+      "value": 0.17603912949562073,
+      "predicted_majority_share": 0.0,
+      "macro_f1": 0.16879497468471527
+    },
+    {
+      "dataset": "Toys",
+      "split_seed": 42,
+      "alpha": 0.0,
+      "student_seed": 501,
+      "metric": "gcn",
+      "value": 0.18092910945415497,
+      "predicted_majority_share": 0.0,
+      "macro_f1": 0.15717053413391113
+    },
+    {
+      "dataset": "Toys",
+      "split_seed": 42,
+      "alpha": 0.0,
+      "student_seed": 502,
+      "metric": "gcn",
+      "value": 0.17848411202430725,
+      "predicted_majority_share": 0.0,
+      "macro_f1": 0.1567596048116684
+    },
+    {
+      "dataset": "Toys",
+      "split_seed": 42,
+      "alpha": 0.0,
+      "student_seed": 500,
+      "metric": "syn_feat_mlp",
+      "value": 0.24449878931045532,
+      "predicted_majority_share": 0.01711491495370865,
+      "macro_f1": 0.17458109557628632
+    },
+    {
+      "dataset": "Toys",
+      "split_seed": 42,
+      "alpha": 0.0,
+      "student_seed": 501,
+      "metric": "syn_feat_mlp",
+      "value": 0.2200489044189453,
+      "predicted_majority_share": 0.0024449878837913275,
+      "macro_f1": 0.1889006495475769
+    },
+    {
+      "dataset": "Toys",
+      "split_seed": 42,
+      "alpha": 0.0,
+      "student_seed": 502,
+      "metric": "syn_feat_mlp",
+      "value": 0.2665036916732788,
+      "predicted_majority_share": 0.0,
+      "macro_f1": 0.23693352937698364
+    }
+  ],
+  "probes": [
+    {
+      "dataset": "Movies",
+      "split_seed": 42,
+      "alpha": 1.0,
+      "nn_cos_mean": 0.28548750281333923,
+      "nn_cos_min": 0.07155259698629379,
+      "nn_same_label_rate": 0.559808611869812,
+      "nodes": 209,
+      "edges": 17602
+    },
+    {
+      "dataset": "Movies",
+      "split_seed": 42,
+      "alpha": 0.0,
+      "nn_cos_mean": 0.282573938369751,
+      "nn_cos_min": 0.05543438717722893,
+      "nn_same_label_rate": 0.6220095753669739,
+      "nodes": 209,
+      "edges": 17648
+    },
+    {
+      "dataset": "Toys",
+      "split_seed": 42,
+      "alpha": 1.0,
+      "nn_cos_mean": 0.29295724630355835,
+      "nn_cos_min": 0.11155524849891663,
+      "nn_same_label_rate": 0.9488189220428467,
+      "nodes": 254,
+      "edges": 27178
+    },
+    {
+      "dataset": "Toys",
+      "split_seed": 42,
+      "alpha": 0.0,
+      "nn_cos_mean": 0.270155668258667,
+      "nn_cos_min": 0.09059754759073257,
+      "nn_same_label_rate": 0.960629940032959,
+      "nodes": 254,
+      "edges": 21266
+    }
+  ],
+  "shifts": [
+    {
+      "dataset": "Movies",
+      "split_seed": 42,
+      "alpha": 1.0,
+      "weighted_indegree": 83.56908829246412
+    },
+    {
+      "dataset": "Movies",
+      "split_seed": 42,
+      "alpha": 0.0,
+      "weighted_indegree": 83.47947816985646
+    },
+    {
+      "dataset": "Toys",
+      "split_seed": 42,
+      "alpha": 1.0,
+      "weighted_indegree": 79.71796567421259
+    },
+    {
+      "dataset": "Toys",
+      "split_seed": 42,
+      "alpha": 0.0,
+      "weighted_indegree": 74.84717181348425
+    }
+  ],
+  "alpha10_reference": {
+    "Movies": {
+      "syn_feat": 28.17,
+      "real_subset": 40.08,
+      "gcn": 31.6
+    },
+    "Toys": {
+      "syn_feat": 34.9,
+      "real_subset": 62.81,
+      "gcn": 23.82
+    }
+  },
+  "device": "cuda:0",
+  "torch": "2.12.0.dev20260408+cu128"
+}

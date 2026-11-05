@@ -1,0 +1,12 @@
+--- a/openfgl/flcore/multimodal_fedgvd/fedgvd_config.py
++++ b/openfgl/flcore/multimodal_fedgvd/fedgvd_config.py
+@@ -7,4 +7,9 @@
+     "feat_alpha": 10.0,
+     "smoothness_alpha": 0.1,
+     "adj_threshold": 0.5,
++    # Compatibility default. Recommended experiment: consistent_low + True.
++    # consistent_low: retain weights >= 0.01 in both training and validation;
++    # soft: retain all weights in both; legacy: prune only at validation.
++    "adj_mode": "legacy",
++    "alternating_optim": False,
+ }

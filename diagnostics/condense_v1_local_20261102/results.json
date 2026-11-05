@@ -1,0 +1,164 @@
+[
+  {
+    "dataset": "Movies",
+    "method": "legacy",
+    "seed": 42,
+    "val_acc": 0.37730059027671814,
+    "syn_nodes": 209,
+    "syn_edges": 8866,
+    "seconds": 71.85
+  },
+  {
+    "dataset": "Movies",
+    "method": "fixed",
+    "seed": 42,
+    "val_acc": 0.33742329478263855,
+    "syn_nodes": 209,
+    "syn_edges": 17686,
+    "seconds": 60.93
+  },
+  {
+    "dataset": "Movies",
+    "method": "random_baseline",
+    "seed": 42,
+    "val_acc": 0.38036808371543884,
+    "syn_nodes": 209,
+    "syn_edges": 12,
+    "seconds": 4.32
+  },
+  {
+    "dataset": "Movies",
+    "method": "legacy",
+    "seed": 43,
+    "val_acc": 0.16871164739131927,
+    "syn_nodes": 209,
+    "syn_edges": 6676,
+    "seconds": 69.94
+  },
+  {
+    "dataset": "Movies",
+    "method": "fixed",
+    "seed": 43,
+    "val_acc": 0.34049078822135925,
+    "syn_nodes": 209,
+    "syn_edges": 29758,
+    "seconds": 65.95
+  },
+  {
+    "dataset": "Movies",
+    "method": "random_baseline",
+    "seed": 43,
+    "val_acc": 0.38957053422927856,
+    "syn_nodes": 209,
+    "syn_edges": 8,
+    "seconds": 4.06
+  },
+  {
+    "dataset": "Movies",
+    "method": "legacy",
+    "seed": 44,
+    "val_acc": 0.38343557715415955,
+    "syn_nodes": 209,
+    "syn_edges": 840,
+    "seconds": 81.3
+  },
+  {
+    "dataset": "Movies",
+    "method": "fixed",
+    "seed": 44,
+    "val_acc": 0.3190183937549591,
+    "syn_nodes": 209,
+    "syn_edges": 23680,
+    "seconds": 82.66
+  },
+  {
+    "dataset": "Movies",
+    "method": "random_baseline",
+    "seed": 44,
+    "val_acc": 0.4110429286956787,
+    "syn_nodes": 209,
+    "syn_edges": 10,
+    "seconds": 6.02
+  },
+  {
+    "dataset": "Toys",
+    "method": "legacy",
+    "seed": 42,
+    "val_acc": 0.23227384686470032,
+    "syn_nodes": 254,
+    "syn_edges": 15080,
+    "seconds": 108.6
+  },
+  {
+    "dataset": "Toys",
+    "method": "fixed",
+    "seed": 42,
+    "val_acc": 0.2420538067817688,
+    "syn_nodes": 254,
+    "syn_edges": 21730,
+    "seconds": 88.78
+  },
+  {
+    "dataset": "Toys",
+    "method": "random_baseline",
+    "seed": 42,
+    "val_acc": 0.5916870832443237,
+    "syn_nodes": 254,
+    "syn_edges": 11,
+    "seconds": 5.45
+  },
+  {
+    "dataset": "Toys",
+    "method": "legacy",
+    "seed": 43,
+    "val_acc": 0.20293399691581726,
+    "syn_nodes": 254,
+    "syn_edges": 16728,
+    "seconds": 128.69
+  },
+  {
+    "dataset": "Toys",
+    "method": "fixed",
+    "seed": 43,
+    "val_acc": 0.15403424203395844,
+    "syn_nodes": 254,
+    "syn_edges": 20108,
+    "seconds": 104.79
+  },
+  {
+    "dataset": "Toys",
+    "method": "random_baseline",
+    "seed": 43,
+    "val_acc": 0.6039119958877563,
+    "syn_nodes": 254,
+    "syn_edges": 15,
+    "seconds": 4.98
+  },
+  {
+    "dataset": "Toys",
+    "method": "legacy",
+    "seed": 44,
+    "val_acc": 0.45721274614334106,
+    "syn_nodes": 254,
+    "syn_edges": 0,
+    "seconds": 118.44
+  },
+  {
+    "dataset": "Toys",
+    "method": "fixed",
+    "seed": 44,
+    "val_acc": 0.22249390184879303,
+    "syn_nodes": 254,
+    "syn_edges": 21884,
+    "seconds": 95.4
+  },
+  {
+    "dataset": "Toys",
+    "method": "random_baseline",
+    "seed": 44,
+    "val_acc": 0.5965770483016968,
+    "syn_nodes": 254,
+    "syn_edges": 7,
+    "seconds": 4.77
+  }
+]

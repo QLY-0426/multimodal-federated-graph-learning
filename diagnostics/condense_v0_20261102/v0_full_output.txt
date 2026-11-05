@@ -1,0 +1,77 @@
+V0 torch=2.12.0.dev20260408+cu128 device=cuda:0 seed=42 nodes=200 dims=64/128 classes=4 missing=10%
+
+=== legacy alternating=False teacher=50 condense=100 student=100 ===
+[condense-diag] adj_mode=legacy alternating_optim=False
+[condense-diag] epoch=0 teacher_on_syn_acc=0.8750 retained_edges=38
+[condense-diag] epoch=25 weight.mean=0.150404 fraction_ge_adj_threshold=0.163043 retained_edges=90 teacher_on_syn_acc=1.0000
+[condense] epoch=25 loss=0.40301 validation=1.0000
+[condense-diag] epoch=50 weight.mean=0.096809 fraction_ge_adj_threshold=0.054348 retained_edges=30 teacher_on_syn_acc=1.0000
+[condense] epoch=50 loss=0.05467 validation=1.0000
+[condense-diag] epoch=75 weight.mean=0.110892 fraction_ge_adj_threshold=0.119565 retained_edges=66 teacher_on_syn_acc=1.0000
+[condense] epoch=75 loss=0.04589 validation=1.0000
+[condense-diag] epoch=100 weight.mean=0.111979 fraction_ge_adj_threshold=0.105072 retained_edges=58 teacher_on_syn_acc=1.0000
+[condense] epoch=100 loss=0.04426 validation=1.0000
+[condense-diag] final_text_relative_shift=2.435049 final_image_relative_shift=3.574658
+[client 0] saved 24 paired nodes: D:\����ѧϰ����\������_������Ŀ����\�½��ļ���\FedGVD-multimodal_fedgvd���޸İ�)\FedGVD-multimodal_fedgvd\diagnostics\condense_v0_20261102\v0_legacy_kx2jm0_r\movies_42_0.pt
+V0 PASS legacy
+
+=== consistent_low alternating=True teacher=50 condense=100 student=100 ===
+[condense-diag] adj_mode=consistent_low alternating_optim=True
+[condense-diag] epoch=0 teacher_on_syn_acc=0.4167 retained_edges=552
+[condense-diag] epoch=25 weight.mean=0.239971 fraction_ge_adj_threshold=0.202899 retained_edges=552 teacher_on_syn_acc=1.0000
+[condense] epoch=25 loss=0.60448 validation=1.0000
+[condense-diag] epoch=50 weight.mean=0.234515 fraction_ge_adj_threshold=0.224638 retained_edges=552 teacher_on_syn_acc=1.0000
+[condense] epoch=50 loss=0.46706 validation=1.0000
+[condense-diag] epoch=75 weight.mean=0.191003 fraction_ge_adj_threshold=0.217391 retained_edges=372 teacher_on_syn_acc=1.0000
+[condense] epoch=75 loss=0.08020 validation=1.0000
+[condense-diag] epoch=100 weight.mean=0.192642 fraction_ge_adj_threshold=0.217391 retained_edges=346 teacher_on_syn_acc=1.0000
+[condense] epoch=100 loss=0.06113 validation=1.0000
+[condense-diag] final_text_relative_shift=2.162015 final_image_relative_shift=3.472904
+[client 0] saved 24 paired nodes: D:\����ѧϰ����\������_������Ŀ����\�½��ļ���\FedGVD-multimodal_fedgvd���޸İ�)\FedGVD-multimodal_fedgvd\diagnostics\condense_v0_20261102\v0_consistent_low__fu96yw2\movies_42_0.pt
+V0 PASS consistent_low
+
+=== soft alternating=True teacher=50 condense=100 student=100 ===
+[condense-diag] adj_mode=soft alternating_optim=True
+[condense-diag] epoch=0 teacher_on_syn_acc=0.4167 retained_edges=552
+[condense-diag] epoch=25 weight.mean=0.242124 fraction_ge_adj_threshold=0.221014 retained_edges=552 teacher_on_syn_acc=1.0000
+[condense] epoch=25 loss=0.61180 validation=1.0000
+[condense-diag] epoch=50 weight.mean=0.234261 fraction_ge_adj_threshold=0.224638 retained_edges=552 teacher_on_syn_acc=1.0000
+[condense] epoch=50 loss=0.46776 validation=1.0000
+[condense-diag] epoch=75 weight.mean=0.191447 fraction_ge_adj_threshold=0.217391 retained_edges=552 teacher_on_syn_acc=1.0000
+[condense] epoch=75 loss=0.08498 validation=1.0000
+[condense-diag] epoch=100 weight.mean=0.193861 fraction_ge_adj_threshold=0.217391 retained_edges=552 teacher_on_syn_acc=1.0000
+[condense] epoch=100 loss=0.06704 validation=1.0000
+[condense-diag] final_text_relative_shift=2.142141 final_image_relative_shift=3.489191
+[client 0] saved 24 paired nodes: D:\����ѧϰ����\������_������Ŀ����\�½��ļ���\FedGVD-multimodal_fedgvd���޸İ�)\FedGVD-multimodal_fedgvd\diagnostics\condense_v0_20261102\v0_soft_k_ohewi7\movies_42_0.pt
+V0 PASS soft
+PASS topology train/eval policy, retained-weight gradients, config signature, caller settings unchanged
+[
+  {
+    "mode": "legacy",
+    "alternating": false,
+    "teacher_initial": 0.875,
+    "teacher_final": 1.0,
+    "selected_edges": 90,
+    "text_shift": 2.435049,
+    "image_shift": 3.574658
+  },
+  {
+    "mode": "consistent_low",
+    "alternating": true,
+    "teacher_initial": 0.4167,
+    "teacher_final": 1.0,
+    "selected_edges": 552,
+    "text_shift": 2.162015,
+    "image_shift": 3.472904
+  },
+  {
+    "mode": "soft",
+    "alternating": true,
+    "teacher_initial": 0.4167,
+    "teacher_final": 1.0,
+    "selected_edges": 552,
+    "text_shift": 2.142141,
+    "image_shift": 3.489191
+  }
+]
+V0 ALL PASS

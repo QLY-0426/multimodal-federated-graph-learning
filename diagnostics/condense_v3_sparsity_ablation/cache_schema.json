@@ -1,0 +1,64 @@
+{
+  "Movies_fixed_42.pt": {
+    "type": "dict",
+    "keys": [
+      "graph",
+      "signature"
+    ],
+    "payload": {
+      "x_text": [
+        209,
+        768
+      ],
+      "x_image": [
+        209,
+        768
+      ],
+      "y": [
+        209
+      ],
+      "edge_index": [
+        2,
+        17686
+      ],
+      "edge_weight": [
+        17686
+      ],
+      "modality_mask": [
+        209,
+        2
+      ]
+    }
+  },
+  "Toys_fixed_42.pt": {
+    "type": "dict",
+    "keys": [
+      "graph",
+      "signature"
+    ],
+    "payload": {
+      "x_text": [
+        254,
+        768
+      ],
+      "x_image": [
+        254,
+        768
+      ],
+      "y": [
+        254
+      ],
+      "edge_index": [
+        2,
+        21730
+      ],
+      "edge_weight": [
+        21730
+      ],
+      "modality_mask": [
+        254,
+        2
+      ]
+    }
+  }
+}

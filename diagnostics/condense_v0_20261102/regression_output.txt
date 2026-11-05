@@ -1,0 +1,51 @@
+test_append_preserves_real_evaluation_graph_and_offsets (test_multimodal_condensation.CondensationTests.test_append_preserves_real_evaluation_graph_and_offsets) ... ok
+test_cache_invalidated_by_train_split (test_multimodal_condensation.CondensationTests.test_cache_invalidated_by_train_split) ... D:\����ѧϰ����\Python����\Lib\site-packages\torch_geometric\inspector.py:433: DeprecationWarning: Failing to pass a value to the 'type_params' parameter of 'typing._eval_type' is deprecated, as it leads to incorrect behaviour when calling typing._eval_type on a stringified annotation that references a PEP 695 type parameter. It will be disallowed in Python 3.15.
+  return typing._eval_type(value, _globals, None)  # type: ignore
+[condense-diag] adj_mode=legacy alternating_optim=False
+[condense-diag] epoch=0 teacher_on_syn_acc=0.3333 retained_edges=6
+[condense-diag] epoch=2 weight.mean=0.614628 fraction_ge_adj_threshold=1.000000 retained_edges=6 teacher_on_syn_acc=0.3333
+[condense] epoch=2 loss=6.15197 validation=0.6667
+[condense-diag] final_text_relative_shift=0.194844 final_image_relative_shift=0.198889
+[client 0] saved 3 paired nodes: D:\����ѧϰ����\������_������Ŀ����\�½��ļ���\FedGVD-multimodal_fedgvd���޸İ�)\FedGVD-multimodal_fedgvd\_tmp_test\tmpsm_t_xsl\movies_0.pt
+D:\����ѧϰ����\������_������Ŀ����\�½��ļ���\FedGVD-multimodal_fedgvd���޸İ�)\FedGVD-multimodal_fedgvd\test\test_multimodal_condensation.py:81: UserWarning: Environment variable TORCH_FORCE_NO_WEIGHTS_ONLY_LOAD detected, since the`weights_only` argument was not explicitly passed to `torch.load`, forcing weights_only=False.
+  first = torch.load(path)['signature']
+D:\����ѧϰ����\������_������Ŀ����\�½��ļ���\FedGVD-multimodal_fedgvd���޸İ�)\FedGVD-multimodal_fedgvd\openfgl\flcore\multimodal_fedgvd\SimGC_transductive.py:263: UserWarning: Environment variable TORCH_FORCE_NO_WEIGHTS_ONLY_LOAD detected, since the`weights_only` argument was not explicitly passed to `torch.load`, forcing weights_only=False.
+  cached = torch.load(path, map_location="cpu")
+[condense-diag] adj_mode=legacy alternating_optim=False
+[condense-diag] epoch=0 teacher_on_syn_acc=0.3333 retained_edges=2
+[condense-diag] epoch=2 weight.mean=0.479314 fraction_ge_adj_threshold=0.333333 retained_edges=2 teacher_on_syn_acc=0.3333
+[condense] epoch=2 loss=4.50166 validation=0.6667
+[condense-diag] final_text_relative_shift=0.183853 final_image_relative_shift=0.195895
+[client 0] saved 3 paired nodes: D:\����ѧϰ����\������_������Ŀ����\�½��ļ���\FedGVD-multimodal_fedgvd���޸İ�)\FedGVD-multimodal_fedgvd\_tmp_test\tmpsm_t_xsl\movies_0.pt
+D:\����ѧϰ����\������_������Ŀ����\�½��ļ���\FedGVD-multimodal_fedgvd���޸İ�)\FedGVD-multimodal_fedgvd\test\test_multimodal_condensation.py:84: UserWarning: Environment variable TORCH_FORCE_NO_WEIGHTS_ONLY_LOAD detected, since the`weights_only` argument was not explicitly passed to `torch.load`, forcing weights_only=False.
+  self.assertNotEqual(first, torch.load(path)['signature'])
+ok
+[condense-diag] adj_mode=legacy alternating_optim=False
+[condense-diag] epoch=0 teacher_on_syn_acc=0.3333 retained_edges=6
+[condense-diag] epoch=2 weight.mean=0.614628 fraction_ge_adj_threshold=1.000000 retained_edges=6 teacher_on_syn_acc=0.3333
+[condense] epoch=2 loss=6.15197 validation=0.6667
+[condense-diag] final_text_relative_shift=0.194844 final_image_relative_shift=0.198889
+[client 0] saved 3 paired nodes: D:\����ѧϰ����\������_������Ŀ����\�½��ļ���\FedGVD-multimodal_fedgvd���޸İ�)\FedGVD-multimodal_fedgvd\_tmp_test\tmp0fq1ys8_\movies_0.pt
+[condense-diag] adj_mode=legacy alternating_optim=False cache_hit=True
+[client 0] loaded condensed graph: D:\����ѧϰ����\������_������Ŀ����\�½��ļ���\FedGVD-multimodal_fedgvd���޸İ�)\FedGVD-multimodal_fedgvd\_tmp_test\tmp0fq1ys8_\movies_0.pt
+[condense-diag] adj_mode=legacy alternating_optim=False cache_hit=True
+[client 0] loaded condensed graph: D:\����ѧϰ����\������_������Ŀ����\�½��ļ���\FedGVD-multimodal_fedgvd���޸İ�)\FedGVD-multimodal_fedgvd\_tmp_test\tmp0fq1ys8_\movies_0.pt
+[condense-diag] adj_mode=legacy alternating_optim=False
+[condense-diag] epoch=0 teacher_on_syn_acc=0.3333 retained_edges=6
+[condense-diag] epoch=2 weight.mean=0.614628 fraction_ge_adj_threshold=1.000000 retained_edges=6 teacher_on_syn_acc=0.3333
+[condense] epoch=2 loss=6.15197 validation=0.6667
+[condense-diag] final_text_relative_shift=0.194844 final_image_relative_shift=0.198889
+[client 0] saved 3 paired nodes: D:\����ѧϰ����\������_������Ŀ����\�½��ļ���\FedGVD-multimodal_fedgvd���޸İ�)\FedGVD-multimodal_fedgvd\_tmp_test\tmp0fq1ys8_\movies_0.pt
+test_joint_condensation_cache_and_test_label_independence (test_multimodal_condensation.CondensationTests.test_joint_condensation_cache_and_test_label_independence) ... ok
+[condense-diag] adj_mode=legacy alternating_optim=False
+[condense-diag] epoch=0 teacher_on_syn_acc=0.0000 retained_edges=0
+[condense-diag] epoch=2 weight.mean=0.000000 fraction_ge_adj_threshold=0.000000 retained_edges=0 teacher_on_syn_acc=0.0000
+[condense] epoch=2 loss=2.58564 validation=0.3333
+[condense-diag] final_text_relative_shift=0.196097 final_image_relative_shift=0.000000
+[client 0] saved 1 paired nodes: D:\����ѧϰ����\������_������Ŀ����\�½��ļ���\FedGVD-multimodal_fedgvd���޸İ�)\FedGVD-multimodal_fedgvd\_tmp_test\tmpvt87imt1\movies_0.pt
+test_single_proxy_with_unavailable_image (test_multimodal_condensation.CondensationTests.test_single_proxy_with_unavailable_image) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.652s
+
+OK
